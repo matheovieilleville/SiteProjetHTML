@@ -3,7 +3,8 @@
 }
 .logo {
     width: 125px;
-    margin-left: 1x;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 body {
@@ -23,14 +24,14 @@ body {
 }
 
 .circle {
-    width: 750px;
-    height: 750px;
+    width: 900px;
+    height: 900px;
     border-radius: 50%;
-    background: linear-gradient(to bottom, #68edff, #010b36); /* Fond bleu clair pour le cercle */
+    background: linear-gradient(to bottom, #13e3ff, #001367); /* Fond bleu clair pour le cercle */
     position: absolute; /* Positionnement absolu par rapport au conteneur body */
     z-index: -1; /* Z-index inférieur pour placer le cercle en arrière-plan */
-    top: -150px; /* Déplacer le cercle vers le haut pour le faire dépasser légèrement de l'écran */
-    left: -100px;
+    top: -200px; /* Déplacer le cercle vers le haut pour le faire dépasser légèrement de l'écran */
+    left: -150px;
 }
 
 .black-band {
@@ -38,11 +39,24 @@ body {
     height: 120px; /* Hauteur de la bande noire */
     background-color: black;
     position: absolute;
-    top: 550px;
+    top: 650px;
     transform: translateY(-50%);
-    z-index: 2; /* Z-index plus élevé pour placer la bande noire au-dessus du cercle */
+    z-index: 0; /* Z-index plus élevé pour placer la bande noire au-dessus du cercle */
 }   
 
 header {
     max-height: 100px;
+}
+
+.white-bar {
+    width: 100%;
+    height: 85px; /* Hauteur de la bande blanche */
+    background-color: white;
+    position: absolute;
+    top: 0.8vw;
+    z-index: 3; /* Z-index plus élevé pour placer la bande blanche au-dessus du cercle et de la bande noire */
+}
+
+ul {
+    z-index: 4 ;
 }
