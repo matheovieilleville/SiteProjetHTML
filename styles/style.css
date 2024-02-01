@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+}
+.logo {
+    width: 125px;
+    margin-left: 1x;
+}
+
+body {
+    margin: 0;
+    background-color: black; /* Fond noir pour le reste de la page */
+    display: flex;
+    height: 100vh;
+    position: relative; /* Assure que les éléments enfants sont positionnés par rapport à ce conteneur */
+    z-index: -1; /* Z-index élevé pour placer le fond noir au premier plan */
+}
+
+.circle-container {
+    background-color: red;
+    margin: 0;
+    width: 100vw;
+    position: absolute;
+}
+
+.circle {
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #68edff, #010b36); /* Fond bleu clair pour le cercle */
+    position: absolute; /* Positionnement absolu par rapport au conteneur body */
+    z-index: -1; /* Z-index inférieur pour placer le cercle en arrière-plan */
+    top: -150px; /* Déplacer le cercle vers le haut pour le faire dépasser légèrement de l'écran */
+    left: -100px;
+}
+
+.black-band {
+    width: 100vw;
+    height: 120px; /* Hauteur de la bande noire */
+    background-color: black;
+    position: absolute;
+    top: 550px;
+    transform: translateY(-50%);
+    z-index: 2; /* Z-index plus élevé pour placer la bande noire au-dessus du cercle */
+}   
+
+header {
+    max-height: 100px;
+}
