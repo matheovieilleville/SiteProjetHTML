@@ -1,20 +1,49 @@
+.circle-container {
+    background-color: red;
+    margin: 0;
+    width: 100vw;
+    position: absolute;
+}
+
+.circle {
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #13e3ff, #001367); /* Fond bleu clair pour le cercle */
+    position: absolute; /* Positionnement absolu par rapport au conteneur body */
+    z-index: -1; /* Z-index inférieur pour placer le cercle en arrière-plan */
+    top: -200px; /* Déplacer le cercle vers le haut pour le faire dépasser légèrement de l'écran */
+    left: -150px;
+}
+
+.black-band {
+    width: 100vw;
+    height: 180px; /* Hauteur de la bande noire */
+    background-color: black;
+    position: absolute;
+    top: 50vw;
+    transform: translateY(-50%);
+    z-index: 0; /* Z-index plus élevé pour placer la bande noire au-dessus du cercle */
+}  
+body {
+    margin: 0;
+    background-color: black; /* Fond noir pour le reste de la page */
+}
 .title{
     position: relative;
-}
-.image_burger{
-    position: relative;
+    display: flex;
 }
 .vins {
     position: relative;
     width: 100vw;
     text-align: center;
-    margin: 3vw;
+    margin-top: 3vw;
 }
 .maps {
     position: relative;
     width: 100vw;
     text-align: center;
-    margin: 3vw;
+    margin-top: 3vw;
 }
 
 table {
@@ -46,4 +75,69 @@ p {
 }
 .header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer {
+    display: flex;
+}
+.footer_icon {
+
+}
+.footer_text {
+
+}
+.title_burger_div {
+    order: 3;
+}
+.img_title{
+    order: 1;
+}
+.text_turn {
+    order: 2;
+    margin-left: 8vw;
+    margin-top: 8vw;
+}
+.title_burger{
+    color: white;
+}
+.image_burger{
+    position: relative;
+    border-radius: 55px;
+    margin-bottom: 6vw;
+    margin-left: 2vw;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px; /* Ajuste la marge entre les éléments de la liste selon tes besoins */
+}
+@font-face {
+    font-family: 'Abang';
+    src: url('styles/fonts/Abang.otf') format('opentype');
+    /* Ajoute d'autres formats de fichier si nécessaire */
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Ajuste la couleur du texte selon tes besoins */
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-style;
+}
+.white-bar {
+    width: 85vw;
+    height: 85px; /* Hauteur de la bande blanche */
+    background-color: white;
+    position: absolute;
+    top: 0.8vw;
+    right: 0; /* La barre sera collée à droite */
+    z-index: -1; /* Z-index plus élevé pour placer la bande blanche au-dessus du cercle et de la bande noire */
+    border-bottom-left-radius: 75px;
 }

@@ -8,6 +8,10 @@
 </head>
 <body>
     <header>
+        <div class="circle-container">
+            <div class="circle"></div>
+            <div class="black-band"></div>
+        </div>
         <div class="header">
             <div>
                 <a href=""><img src="images/icon.png" alt="test" class="logo" width="150vw"></a>
@@ -16,8 +20,8 @@
             <nav>
                 <ul>
                     <li><a href="#">MENU</a></li>
-                    <li><a href="#">CARTE DES VINS</a></li>
-                    <li><a href="#">OU SOMMES NOUS ?</a></li>
+                    <li><a href="#vins_button">CARTE DES VINS</a></li>
+                    <li><a href="#maps">OU SOMMES NOUS ?</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </nav>
@@ -27,7 +31,7 @@
     </header>
     <article>
         <div class="title">
-            <div>
+            <div class="title_burger_div">
                 <h2 class="title_burger">Burger Oasis</h2>
             </div>
             <div class="text_turn">
@@ -36,8 +40,8 @@
                 <p>Succombez à la tentation du goût avec nos burgers uniques et délicieux.</p>
                 <p>Des créations de burgers audacieuses, inspirées par la passion de la cuisine.</p>
             </div>
-            <div class="image_burger">
-                <img src="images/image_spawn.jpg" alt="" width="400">
+            <div class="img_title">
+                <img src="images/image_spawn.jpg" alt="" width="300" class="image_burger">
             </div>        
         </div>
     </article>
@@ -89,13 +93,13 @@
     </article>
     <article>
         <div class="vins">        
-        <a href="images/vins.jpg"><img src="images/vins.jpg" alt="Liste Vins" width="450"></a>
+        <a href="images/vins.jpg"><img src="images/vins.jpg" alt="Liste Vins" width="450" id="vins_button"></a>
         </div>
         
     </article>
     <article>
         <div class="maps">
-            <img src="images/maps.png" alt="Images google maps" width="500">
+            <img src="images/maps.png" alt="Images google maps" width="700" id="maps">
         </div>
         <div>
             <h3>
@@ -103,20 +107,14 @@
             </h3>
         </div>
     </article>
-
-    <div class="circle-container">
-        <div class="circle"></div>
-        <div class="black-band"></div>
-    </div>
-
     <footer >
-        <div>
+        <div class="footer_text">
             <p>&copy; 2024 Votre Nom de Restaurant. Tous droits réservés.</p>
             <p>Adresse: 123 Rue de la Gourmandise, Ville</p>
             <p>Téléphone: (123) 456-7890</p>
             <p>Email: info@votrerestaurant.com</p>
         </div>
-        <div>
+        <div class="footer_icon">
             <img src="images/instagram.png" alt="Icon instagram" width="100">
             <img src="images/twitter.png" alt="Icon Twitter" width="100">
             <img src="images/youtube.png" alt="Icon Youtube" width="100">
