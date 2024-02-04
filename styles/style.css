@@ -21,7 +21,7 @@
     height: 180px; /* Hauteur de la bande noire */
     background-color: black;
     position: absolute;
-    top: 50vw;
+    top: 40vw;
     transform: translateY(-50%);
     z-index: 0; /* Z-index plus élevé pour placer la bande noire au-dessus du cercle */
 }  
@@ -102,6 +102,8 @@ p {
     color: white;
     margin: 0;
     text-align: center;
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 10vw;
 }
 .image_burger{
     position: relative;
@@ -130,7 +132,8 @@ nav ul li {
 nav a {
     text-decoration: none;
     color: #333; /* Ajuste la couleur du texte selon tes besoins */
-    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-family: 'Protest Riot';
+
 }
 .white-bar {
     width: 85vw;
@@ -141,4 +144,36 @@ nav a {
     right: 0; /* La barre sera collée à droite */
     z-index: -1; /* Z-index plus élevé pour placer la bande blanche au-dessus du cercle et de la bande noire */
     border-bottom-left-radius: 75px;
+}
+.nav_header{
+    margin-bottom: 2vw;
+    margin-right: -12vw;
+}
+nav ul li {
+    margin-right: 8vw; /* Ajuste la marge entre les éléments de la liste selon tes besoins */
+    font-family: 'Protest Guerrilla';
+    font-size: 1.4vw;
+}
+
+button {
+    background-color: #13e3ff; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement interne (haut/bas, gauche/droite) */
+    font-size: 16px; /* Taille de la police */
+    border: none; /* Retirer la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur au survol */
+    transition: background-color 0.3s ease; /* Animation de transition de couleur de fond */
+    margin-bottom: 2vw;
+    margin-right: 3vw;
+}
+
+button:hover {
+    background-color: #0098ac; /* Couleur de fond au survol */
+}
+.img_icon {
+    margin-left: 10vw;
+}
+h3 {
+    font-family: 'Protest Guerrilla';
 }
