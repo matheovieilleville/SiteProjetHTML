@@ -20,8 +20,8 @@
             <div class="white-bar"></div>
             <nav>
                 <ul class="nav_header">
-                    <li><a href="#">MENU</a></li>
-                    <li><a href="#vins_button">CARTE DES VINS</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#vins_button">BOISSONS</a></li>
                     <li><a href="#maps">OU SOMMES NOUS ?</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
@@ -46,7 +46,7 @@
             </div>        
         </div>
     </article>
-    <article>
+    <article id="menu">
         <div>
             <table>
                 <tr>
@@ -92,22 +92,39 @@
             </table>
         </div>
     </article>
-    <article>
-        <div class="vins">        
+    <article class="div_boisson">
+        <div class="vins" id="vins_button">        
         <a href="images/boisson.jpg"><img src="images/boisson.jpg" alt="Liste Vins" width="450" class="boisson_button"></a>
+        </div>
+        <div class="text_boisson">
+            <h3 class="text_boisson_text">
+                Retrouvez nous sur google maps
+            </h3>
         </div>
         
     </article>
-    <article>
-        <div class="maps">
+    <article class="div_maps">
+        <div class="img_maps" id="maps">
             <img src="images/maps.png" alt="Images google maps" width="700" class="maps">
         </div>
-        <div>
-            <h3>
+        <div class="text_maps">
+            <h3 class="text_maps_text">
                 Retrouvez nous sur google maps
             </h3>
         </div>
     </article>
+    <form action="/submit" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
     <footer >
         <div class="footer_text">
             <p>&copy; 2024 Votre Nom de Restaurant. Tous droits réservés.</p>

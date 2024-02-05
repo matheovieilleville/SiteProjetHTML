@@ -45,6 +45,18 @@ body {
     text-align: center;
     margin-top: 3vw;
     border-radius: 10px;
+    order: 2;
+}
+.img_maps{    
+    order: 2;
+    margin-left: 8vw;
+}
+.text_maps{
+    margin-top: 10vw;
+    padding-left:  5vw;
+}
+.text_maps_text{
+    font-size: 1.5vw;
 }
 
 table {
@@ -52,9 +64,11 @@ table {
     border-collapse: collapse;
     margin-top: 120px;
 }
-
+label{
+    color: white;
+}
 td {
-    border: 1px solid #ddd;
+    border: none;
     padding: 8px;
     text-align: center;
 }
@@ -91,8 +105,9 @@ p {
 .footer_text {
 
 }
-.title_burger_div {
-    order: 3;
+.div_maps{
+    display: flex;
+    flex-direction: row;
 }
 .img_title{
     order: 1;
@@ -101,6 +116,9 @@ p {
     order: 2;
     margin-left: 3vw;
     margin-top: 8vw;
+}
+.title_burger_div{
+    order: 3;
 }
 .title_burger{
     color: white;
