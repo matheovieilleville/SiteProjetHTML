@@ -23,7 +23,7 @@
     height: 140px; /* Hauteur de la bande noire */
     background-color: black;
     position: absolute;
-    top: 38vw;
+    top: 750px;
     transform: translateY(-50%);
     z-index: 0; /* Z-index plus élevé pour placer la bande noire au-dessus du cercle */
 }  
@@ -38,8 +38,30 @@ body {
 .vins {
     position: relative;
     width: 100vw;
-    text-align: center;
+    text-align: start;
     margin-top: 3vw;
+    margin-left: 15vw;
+    order: 2;
+}
+form {
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+label{
+    margin-top: 1vw;
+}
+input{
+    margin-top: 1vw;
+}
+textarea{
+    margin-top: 1vw;
+}
+.button_form{
+    margin-top: 1vw;
 }
 .maps {
     text-align: center;
@@ -50,6 +72,14 @@ body {
 .img_maps{    
     order: 2;
     margin-left: 8vw;
+}
+.text_boisson{
+    margin-top: 15vw;
+    margin-left: 7vw;
+    width: 28vw;
+}
+.text_boisson_text{
+    font-size: 1.5vw;
 }
 .text_maps{
     margin-top: 10vw;
@@ -99,11 +129,8 @@ p {
 .footer {
     display: flex;
 }
-.footer_icon {
-
-}
-.footer_text {
-
+.div_boisson{
+    display: flex;
 }
 .div_maps{
     display: flex;
@@ -168,7 +195,7 @@ nav a {
     border-bottom-left-radius: 75px;
 }
 .nav_header{
-    margin-bottom: 2vw;
+    margin-bottom: 2.5vw;
     margin-right: -12vw;
 }
 nav ul li {
@@ -177,7 +204,7 @@ nav ul li {
     font-size: 1.4vw;
 }
 
-button {
+.button_nav {
     background-color: #13e3ff; /* Couleur de fond */
     color: white; /* Couleur du texte */
     padding: 10px 20px; /* Espacement interne (haut/bas, gauche/droite) */
@@ -186,7 +213,7 @@ button {
     border-radius: 5px; /* Coins arrondis */
     cursor: pointer; /* Curseur au survol */
     transition: background-color 0.3s ease; /* Animation de transition de couleur de fond */
-    margin-bottom: 2vw;
+    margin-bottom: 2.5vw;
     margin-right: 3vw;
 }
 
@@ -198,4 +225,51 @@ button:hover {
 }
 h3 {
     font-family: 'Protest Guerrilla';
+}
+footer{
+    display: flex;
+}
+.footer_text{
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+}
+.footer_icon{
+    margin-top: 2vw;
+    margin-left: 13vw;
+}
+.footer_icon img {
+    margin-right: 13vw; /* Ajoute un espace de 10 pixels entre chaque image */
+}
+/* Ajoutez ceci à votre fichier CSS */
+.command-modal {
+    z-index: 1000;
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 8vw;
+    width: 10vw;
+}
+.modal-title {
+    color: black;
+    margin-bottom: 10px;
+    font-family: 'Protest Guerrilla';
+    font-size: 20px;
+}
+.button_dom{
+    background-color: #13e3ff; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement interne (haut/bas, gauche/droite) */
+    font-size: 16px; /* Taille de la police */
+    border: none; /* Retirer la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur au survol */
+    transition: background-color 0.3s ease; /* Animation de transition de couleur de fond */
+    margin-right: 3vw;
+}
+.dom_text{
+    color: black;
 }
