@@ -20,10 +20,10 @@
 }
 .black-band {
     width: 100vw;
-    height: 140px; /* Hauteur de la bande noire */
+    height: 150px; /* Hauteur de la bande noire */
     background-color: black;
     position: absolute;
-    top: 750px;
+    top: 725px;
     transform: translateY(-50%);
     z-index: 0; /* Z-index plus élevé pour placer la bande noire au-dessus du cercle */
 }  
@@ -272,4 +272,8 @@ footer{
 }
 .dom_text{
     color: black;
+}
+p {
+    font-size: 24px;
+    font-family: 'Protest Guerrilla';
 }
