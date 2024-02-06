@@ -10,7 +10,7 @@ function openCommandModal() {
     modal.innerHTML = `
         <div class="modal-content">
             <h2 class="modal-title">Commande en ligne</h2>
-            <div>
+            <div>sdzq
                 <label for="category">Choisissez une catégorie :</label>
                 <select id="category" name="category" onchange="updateOptions()">
                     <option value="burgers">Burgers</option>
