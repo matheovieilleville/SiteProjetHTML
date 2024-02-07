@@ -238,7 +238,7 @@ footer{
     margin-left: 13vw;
 }
 .footer_icon img {
-    margin-right: 13vw; /* Ajoute un espace de 10 pixels entre chaque image */
+    margin-right: 8vw; /* Ajoute un espace de 10 pixels entre chaque image */
 }
 /* Ajoutez ceci à votre fichier CSS */
 .command-modal {
